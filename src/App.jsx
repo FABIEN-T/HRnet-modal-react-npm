@@ -1,24 +1,22 @@
-import { useState } from 'react'
-import './App.css'
+import { Modal } from './components/Modal'
+import React, { useEffect, useState } from 'react'
+import styles from './App.module.css'
 
 function App() {
-  const [count, setCount] = useState(0)
-
+  const [isOpen, setIsOpen] = useState(false)
+  // useEffect(() => {
+  //   console.log(isOpen)
+  // })
   return (
-    <>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
+    <div className="App">
+      <h1>Essai modal</h1>
+      <main>
+        <button className={styles.primaryBtn} onClick={() => setIsOpen(true)}>
+          Open Modal
         </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+        {isOpen && <Modal setIsOpen={setIsOpen} />}
+      </main>
+    </div>
   )
 }
 
