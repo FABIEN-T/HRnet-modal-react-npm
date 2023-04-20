@@ -1,12 +1,27 @@
 {
-  "name": "p14-modal-react",
-  "private": true,
-  "version": "0.0.0",
+  "name": "vite-react-button",
+  "private": false,
+  "version": "0.0.1",
   "type": "module",
+  "main": "dist/index.umd.js",
+  "module": "dist/index.es.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.es.js",
+      "require": "./dist/index.umd.js"
+    }
+  },
+  "files": [
+    "/dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+    "prepare": "npm run build",
     "preview": "vite preview"
   },
   "dependencies": {
@@ -14,13 +29,12 @@
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@types/react": "^18.0.28",
+    "@types/node": "^18.15.12",
+    "@types/react": "^18.0.37",
     "@types/react-dom": "^18.0.11",
-    "@vitejs/plugin-react-swc": "^3.0.0",
-    "eslint": "^8.38.0",
-    "eslint-plugin-react": "^7.32.2",
-    "eslint-plugin-react-hooks": "^4.6.0",
-    "eslint-plugin-react-refresh": "^0.3.4",
+    "@vitejs/plugin-react-swc": "^3.3.0",
+    "prettier": "^2.8.7",
+    "styled-components": "^5.3.9",
     "vite": "^4.3.0"
   }
 }
