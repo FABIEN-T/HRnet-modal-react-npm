@@ -1,11 +1,30 @@
 import React from 'react'
-import styles from './Modal.module.css'
+import './modal.css'
 import PropTypes from 'prop-types'
 
 export function Modal({ setIsOpen }) {
   return (
     <>
-      <div className={styles.darkBG} onClick={() => setIsOpen(false)} />
+      <div className="darkBG" onClick={() => setIsOpen(false)} />
+      <div className="centered">
+        <span
+          className="close"
+          onClick={() => {
+            setIsOpen(false)
+          }}
+        ></span>
+        <div className="modalContent">Employee Created !</div>
+      </div>
+    </>
+  )
+}
+
+Modal.propTypes = {
+  setIsOpen: PropTypes.func,
+}
+
+{
+  /* <div className={styles.darkBG} onClick={() => setIsOpen(false)} />
       <div className={styles.centered}>
         <span
           className={styles.close}
@@ -14,11 +33,5 @@ export function Modal({ setIsOpen }) {
           }}
         ></span>
         <div className={styles.modalContent}>Employee Created !</div>
-      </div>
-    </>
-  )
-}
-
-Modal.propTypes = {
-  setIsOpen: PropTypes.func,
+      </div> */
 }
