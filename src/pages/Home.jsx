@@ -11,7 +11,23 @@ export default function Home() {
         <button className={styles.primaryBtn} onClick={() => setIsOpen(true)}>
           Open Modal
         </button>
-        {isOpen && <Modal setIsOpen={setIsOpen} />}
+        {isOpen && (
+          <Modal
+            setIsOpen={setIsOpen}
+            firstName={'Quentin'}
+            lastName={'Du Roi'}
+            modalBgColor={'white'}
+            modalBorder={'3px solid green'}
+            modalBorderRadius={'20px'}
+            crossCloseBg={'pink'}
+            crossCloseColor={'red'}
+            crossCloseBorder={'3px solid green'}
+            fontFamily={'Trebuchet MS'}
+            fontSize={'20px'}
+            fontColor={'blue'}
+            textAlign={'left'}
+          />
+        )}
       </main>
     </>
   )

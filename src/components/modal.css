@@ -1,6 +1,6 @@
 /* @src/components/Modal.module.css */
 
-.darkBG {
+/* .darkBG {
   position: fixed;
   background-color: rgba(0, 0, 0, 0.8);
   width: 100%;
@@ -8,34 +8,36 @@
   z-index: 0;
   top: 0;
   left: 0;
-}
+} */
 
-.centered {
+/* .centered {
   position: fixed;
+  text-align: center;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   box-sizing: border-box;
   width: 500px;
   height: 48px;
+  height: fit-content;
   background: white;
   color: white;
   border-radius: 8px;
-}
+} */
 
-.modalContent {
+/* .modalContent {
   padding: 15px 30px;
   font-size: 14px;
   color: black;
-  /* text-align: center; */
-}
+  text-align: center;
+} */
 
 /* Création de la Croix de la fermeture de la Modale */
-.close {
+/* .close {
   position: absolute;
-  /* z-index: 10; */
-  /* right: 15px;
-    top: 15px; */
+  z-index: 10; 
+  right: 15px;
+    top: 15px;
   right: 0;
   top: 0;
   align-self: flex-end;
@@ -48,7 +50,6 @@
   border-radius: 50%;
   opacity: 1;
   cursor: pointer;
-  /* transform: scale(0.7); */
 }
 
 .close:before,
@@ -66,4 +67,4 @@
 }
 .close:after {
   transform: rotate(-45deg);
-}
+} */
