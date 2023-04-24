@@ -1,6 +1,4 @@
 import React from 'react'
-// import './modal.css'
-import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
 const DarkBg = styled.div`
@@ -70,8 +68,7 @@ const ModalContent = styled.div`
 
 export function Modal({
   setIsOpen,
-  firstName,
-  lastName,
+  text,
   modalBgColor,
   modalBorder,
   modalBorderRadius,
@@ -84,22 +81,16 @@ export function Modal({
   fontColor,
   textAlign,
 }) {
+  console.log('text', text)
+
   return (
     <>
       <DarkBg onClick={() => setIsOpen(false)} />
-      {/* <div className="darkBG" onClick={() => setIsOpen(false)} /> */}
-      {/* <div className="centered"> */}
       <ModalBg
         modalBgColor={modalBgColor}
         modalBorder={modalBorder}
         modalBorderRadius={modalBorderRadius}
       >
-        {/* <span
-          className="close"
-          onClick={() => {
-            setIsOpen(false)
-          }}
-        ></span> */}
         <CrossClose
           crossCloseBg={crossCloseBg}
           crossCloseColor={crossCloseColor}
@@ -108,8 +99,6 @@ export function Modal({
             setIsOpen(false)
           }}
         ></CrossClose>
-        <div className="modalContent"></div>
-        {/* <div className="modalContent"> */}
         <ModalContent
           textAlign={textAlign}
           fontFamily={fontFamily}
@@ -117,31 +106,9 @@ export function Modal({
           fontWeight={fontWeight}
           fontColor={fontColor}
         >
-          {/* Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
-          consectetur aliquid eveniet debitis quis doloribus maxime repudiandae
-          ipsum exercitationem a nisi quas quasi doloremque explicabo, ratione
-          accusantium distinctio! Officia, nostrum? */}
-          {firstName} {lastName} is saved.
+          {text}
         </ModalContent>
-        {/* </div> */}
       </ModalBg>
     </>
   )
-}
-
-Modal.propTypes = {
-  setIsOpen: PropTypes.func,
-}
-
-{
-  /* <div className={styles.darkBG} onClick={() => setIsOpen(false)} />
-      <div className={styles.centered}>
-        <span
-          className={styles.close}
-          onClick={() => {
-            setIsOpen(false)
-          }}
-        ></span>
-        <div className={styles.modalContent}>Employee Created !</div>
-      </div> */
 }
