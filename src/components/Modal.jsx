@@ -23,6 +23,9 @@ const ModalBg = styled.div`
   color: white;
   border: ${(props) => props.modalBorder || ''};
   border-radius: ${(props) => props.modalBorderRadius || '8px'};
+  @media (max-width: 550px) {
+    max-width: 75vw;
+  }
 `
 
 const CrossClose = styled.span`
@@ -81,8 +84,6 @@ export function Modal({
   fontColor,
   textAlign,
 }) {
-  console.log('text', text)
-
   return (
     <>
       <DarkBg onClick={() => setIsOpen(false)} />
