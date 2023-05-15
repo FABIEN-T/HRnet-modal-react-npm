@@ -1,6 +1,4 @@
-/* @src/components/Modal.module.css */
-
-/* .darkBG {
+@src /components/Modal.module.css */; /* .darkBG {
   position: fixed;
   background-color: rgba(0, 0, 0, 0.8);
   width: 100%;
@@ -50,9 +48,9 @@
   border-radius: 50%;
   opacity: 1;
   cursor: pointer;
-}
+} */
 
-.close:before,
+/* .close:before,
 .close:after {
   position: absolute;
   top: 8px;
@@ -60,9 +58,9 @@
   content: ' ';
   height: 14px;
   width: 2px;
-  background-color: white;
-}
-.close:before {
+  background-color:midnightblue;
+} */
+/* .close:before {
   transform: rotate(45deg);
 }
 .close:after {
