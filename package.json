@@ -1,5 +1,12 @@
 {
   "name": "fv-modal-react",
+  "author": "Fabien Varlet",
+  "description": "customizable modal package",
+  "keywords": [
+    "modal",
+    "react",
+    "styled-components"
+  ],
   "private": false,
   "version": "0.0.10",
   "type": "module",

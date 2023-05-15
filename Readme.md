@@ -20,7 +20,7 @@ View the composant Modal.jsx in `src/components/Modals.jsx`
 
 `npm i fv-modal-react`
 
-### 2/Import the component from the library :
+### 2/ Import the component from the library :
 
 `import { Modal } from 'fv-modal-react'`
 
