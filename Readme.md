@@ -14,6 +14,10 @@
 This is the repository of the modal package : fv-modal-react.
 View the composant Modal.jsx in `src/components/Modals.jsx`
 
+- repository : https://github.com/FABIEN-T/P14-modal-react
+
+- package npm : https://www.npmjs.com/package/fv-modal-react?activeTab=readme
+
 ## Installing the package
 
 ### 1/ Install package :
