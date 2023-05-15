@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 
 export default function App() {
   const [isOpen, setIsOpen] = useState(false)
-  const name = 'Tony  Stark'
+  const name = 'John Smith'
   console.log(isOpen)
   return (
     <div className="App">
@@ -22,11 +22,9 @@ export default function App() {
           fontFamily={'Trebuchet MS'}
           fontSize={'20px'}
           fontColor={'white'}
-          textAlign={'left'}
+          textAlign={'center'}
         />
       )}
     </div>
   )
 }
-
-// export default App
