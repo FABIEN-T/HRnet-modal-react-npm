@@ -73,6 +73,7 @@ export default function Home() {
   // Custom the font
   fontFamily={'Trebuchet MS'}
   fontSize={'20px'}
+  fontWeight={'bold'}
   fontColor={'white'}
   textAlign={'center'}
 />
