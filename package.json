@@ -8,7 +8,7 @@
     "styled-components"
   ],
   "private": false,
-  "version": "0.1.02",
+  "version": "0.1.03",
   "license": "ISC",
   "type": "module",
   "main": "dist/index.umd.js",
