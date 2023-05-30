@@ -101,7 +101,7 @@ export default function Home() {
 
 ![Prop-types](https://img.shields.io/badge/Prettier-^2.8.2-blue?style=flat-square)
 
-![Prettier](https://img.shields.io/badge/Prettier-^15.8.1-blue?style=flat-square)
+![Prettier](https://img.shields.io/badge/Prop--types-%5E15.8.1-blue)
 
 ![Vite](https://img.shields.io/badge/Vite-^4.3.5-blue?style=flat-square)
 
