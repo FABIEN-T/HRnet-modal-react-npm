@@ -1,4 +1,3 @@
-import React, { useMemo, useCallback } from 'react'
 import styled from 'styled-components'
 
 const DarkBg = styled.div`
